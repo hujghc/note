@@ -9,6 +9,7 @@ if [ $fonts -eq 0 ]; then
     yum -y install unzip
     mkdir -p /usr/share/fonts/win
     unzip SourceHanSerifSC_SB-H.zip SourceHanSerifSC*.otf -d /usr/share/fonts/win
+    rm SourceHanSerifSC_SB-H.zip -rf
 
     fc-list | grep 'SourceHanSerifSC_SB-H'
 
