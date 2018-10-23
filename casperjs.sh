@@ -3,10 +3,7 @@
 yum -y install bzip2
 yum -y install npm
 yum -y install node
-npm config get registry
-npm config set registry https://registry.npm.taobao.org
-npm config get registry
-npm install casperjs phantomjs -g
+npm --registry https://registry.npm.taobao.org install casperjs phantomjs -g
 casperjs --version
 phantomjs  --version
 
